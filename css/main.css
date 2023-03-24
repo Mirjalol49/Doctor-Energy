@@ -1,0 +1,376 @@
+/* kanit-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kanit-v12-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/kanit-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* kanit-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/kanit-v12-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/kanit-v12-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* kanit-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/kanit-v12-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/kanit-v12-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* kanit-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/kanit-v12-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/kanit-v12-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* kanit-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/kanit-v12-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/kanit-v12-latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+/** VARIABLES */
+:root{
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+*{
+    box-sizing: border-box;
+}
+/* GENERAL */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+img{
+    display: block;
+    height: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', "Arial", sans-serif;
+    font-weight: 400;
+    background-color: #F7F7F7;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.container-header {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+    flex-grow: 1;
+}
+
+/***** HEADER STYLE START ******/
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #000;
+    z-index: 99;
+}
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img:active {
+    opacity: 0.7;
+    
+}
+
+.header-link_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.header-link_items {
+    margin-right: 20px;
+    
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.header-link:hover{
+    color: #00BF63;
+    transition:  0.2s ease-in-out;
+}
+
+.header-link:active {
+    opacity: 0.5;
+}
+
+.header-link:focus {
+    color: #00BF63;
+}
+
+/***** HEADER STYLE END ******/
+
+/***** MAIN STYLE START ******/
+.site-main {
+    padding-top: 100px;
+}
+
+/***** HERO SECTION STYLE START ******/
+.hero-section-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section-title {
+    width: 550px;
+    line-height: 45px;
+    font-weight: 800;
+    color:#000000;
+}
+/***** HERO SECTION STYLE END ******/
+
+/***** SERVICES SECTION STYLE START ******/
+
+.services-section {
+    padding-top: 50px;
+}
+
+.services-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #00BF63;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-item {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #12dc7a;
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.services-item:hover {
+    transform: scale(1.1);
+}
+
+.services-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.services-item-title {
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+}
+
+.services-item-desc {
+    padding: 0 10px;
+    margin: 15px 0;
+    line-height: 1.3;
+    text-align: center;
+    color: #333333;
+}
+
+/***** SERVICES SECTION STYLE END ******/
+
+/***** OURTEAM SECTION STYLE START ******/
+.ourteam-section {
+    padding-top: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.ourteam-main-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #00BF63;
+    text-align: center;
+}
+
+.ourteam-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.ourteam-item {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #12dc7a;
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.ourteam-item:hover{
+    transform: scale(1.1);
+}
+
+.ourteam-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.ourteam-textbox {
+    text-align: center;
+}
+
+.ourteam-title {
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    color: #333333;
+    font-weight: 700; 
+}
+
+.ourteam-subtitle {
+    color: #333333;
+    font-weight: 600; 
+    font-size: 18px;
+}
+
+.ourteam-desc {
+    padding: 0 10px;
+    margin: 15px 0;
+    line-height: 1.3;
+    color: #333333;
+}
+
+/***** OURTEAM SECTION STYLE END ******/
+
+/***** MAIN STYLE END ******/
+
+/***** FOOTER STYLE START ******/
+.site-footer {
+    padding:  20px 0 0 0;
+    background-color: #ffffff;
+}
+
+.footer-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+}
+
+.phone-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.phone-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.copyright-text {
+    color: #333333;
+}
+/***** FOOTER STYLE END ******/
+
+
+
+
